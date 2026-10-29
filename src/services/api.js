@@ -1,6 +1,6 @@
 
 
-const API_URL = "https://jobportal-xbvf.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL || "https://jobportal-xbvf.onrender.com";
 async function request(path, options = {}) {
   let response
 
@@ -10,9 +10,8 @@ async function request(path, options = {}) {
       ...options,
     })
   } catch (networkError) {
-    // fetch() only throws when the server cannot be reached at all
     throw new Error(
-      'Cannot reach the server. Start JSON Server with: npx json-server db.json --port 3000'
+      'Cannot reach the server. It may be waking up (this can take up to a minute). Please wait a moment and try again.'
     )
   }
 
