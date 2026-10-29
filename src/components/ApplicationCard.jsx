@@ -4,19 +4,10 @@ import { APPLICATION_STATUSES } from '../utils/constants.js'
 import { formatDate } from '../utils/format.js'
 import './ApplicationCard.css'
 
-// Shows one application. It works in two modes:
-//   mode="recruiter"  -> shows candidate details and a status dropdown
-//   mode="candidate"  -> shows job details and a read-only status badge
-//
-// Props:
-//   application    { id, status, appliedAt, coverLetter, candidate, job }
-//                  (candidate / job may be null if the record was deleted)
-//   mode           "recruiter" | "candidate"
-//   onStatusChange function(applicationId, newStatus)  (recruiter mode only)
-//   updating       true while a status update request is running
 function ApplicationCard({ application, mode = 'candidate', onStatusChange, updating = false }) {
   const { candidate, job } = application
   const statusClass = `appcard-status appcard-status-${application.status.toLowerCase()}`
+  const resumeUrl = candidate?.resumeUrl || ''
 
   return (
     <article className="appcard">
@@ -45,6 +36,23 @@ function ApplicationCard({ application, mode = 'candidate', onStatusChange, upda
 
       {application.coverLetter && (
         <p className="appcard-letter">“{application.coverLetter}”</p>
+      )}
+
+      {mode === 'recruiter' && (
+        <div className="appcard-resume">
+          {resumeUrl ? (
+            <a
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="appcard-resume-link"
+            >
+              📄 View Resume
+            </a>
+          ) : (
+            <span className="appcard-resume-missing">No resume uploaded</span>
+          )}
+        </div>
       )}
 
       <div className="appcard-bottom">

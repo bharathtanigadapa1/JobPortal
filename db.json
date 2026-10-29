@@ -185,7 +185,7 @@
         "JavaScript",
         "CSS"
       ],
-      "resumeUrl": "https://example.com/resumes/priya-sharma.pdf"
+      "resumeUrl":"/Resumes/resume1.pdf"
     },
     {
       "id": 2,
@@ -199,7 +199,7 @@
         "Express",
         "PostgreSQL"
       ],
-      "resumeUrl": ""
+      "resumeUrl": "/Resumes/resume2.pdf"
     },
     {
       "id": 3,
@@ -213,7 +213,7 @@
         "CSS",
         "React"
       ],
-      "resumeUrl": "https://example.com/resumes/ananya-reddy.pdf"
+      "resumeUrl": "/Resumes/resume1.pdf"
     },
     {
       "id": 4,
@@ -227,7 +227,7 @@
         "Kubernetes",
         "Terraform"
       ],
-      "resumeUrl": ""
+      "resumeUrl":"/Resumes/resume1.pdf"
     },
     {
       "id": 5,
@@ -241,7 +241,7 @@
         "User Research",
         "Prototyping"
       ],
-      "resumeUrl": "https://example.com/resumes/sneha-patel.pdf"
+      "resumeUrl": "/Resumes/resume1.pdf"
     },
     {
       "name": "Tanigadapa Bharath Kumar",
@@ -253,7 +253,7 @@
         "React",
         "JavaScript"
       ],
-      "resumeUrl": "",
+      "resumeUrl": "/Resumes/resume1.pdf",
       "id": 6
     }
   ],
