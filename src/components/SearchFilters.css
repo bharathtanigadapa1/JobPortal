@@ -1,0 +1,70 @@
+.searchfilters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.85rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.1rem;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.searchfilters-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 150px;
+  flex: 1 1 150px;
+}
+
+.searchfilters-grow {
+  flex: 2 1 220px;
+}
+
+.searchfilters-field label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.searchfilters-field input,
+.searchfilters-field select {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.searchfilters-field input:focus,
+.searchfilters-field select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.searchfilters-reset {
+  padding: 0.68rem 1.2rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.searchfilters-reset:hover {
+  background: var(--primary-light);
+}
+
+@media (max-width: 600px) {
+  .searchfilters-reset {
+    width: 100%;
+  }
+}

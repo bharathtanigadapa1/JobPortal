@@ -1,0 +1,308 @@
+/* Global resets, typography and CSS variables only.
+   Every component keeps its own styles in its own CSS file. */
+
+/* ================= COLOR THEMES =================
+   Change ONE word in index.html:  <html data-theme="teal">
+   Options: light | mint | lavender | peach | rose | teal | blue | purple | orange
+   To make your own, copy a block below and change the values. */
+
+/* Shared (non-theme) variables */
+:root {
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --success: #15803d;
+  --success-bg: #e8f7ee;
+  --danger: #b91c1c;
+  --danger-bg: #fdecec;
+  --danger-border: #f3c0c0;
+  --warning: #b45309;
+  --warning-bg: #fff4e0;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(16, 24, 40, 0.08), 0 4px 12px rgba(16, 24, 40, 0.05);
+  --shadow-hover: 0 6px 20px rgba(16, 24, 40, 0.12);
+  --max-width: 1140px;
+
+  /* Hero + footer colors (dark themes: white text on a dark gradient) */
+  --hero-from: var(--primary-deep);
+  --hero-via: var(--primary);
+  --hero-to: var(--primary-bright);
+  --hero-title: #ffffff;
+  --hero-text: var(--on-dark-soft);
+  --footer-bg: var(--primary-deep);
+  --footer-text: var(--on-dark-soft);
+  --footer-muted: var(--on-dark-muted);
+  --footer-faint: var(--on-dark-faint);
+  --footer-title: #ffffff;
+  --footer-line: rgba(255, 255, 255, 0.12);
+}
+
+/* Light (default): white / soft sky-blue, dark text on a pale hero */
+:root,
+:root[data-theme='light'] {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #e8f0ff;
+  --primary-deep: #1e3a8a;
+  --primary-bright: #3b82f6;
+  --accent: #3b82f6;
+  --ring: rgba(59, 130, 246, 0.22);
+  --bg: #f8fafc;
+  --surface-alt: #f8fafc;
+  --surface-alt-2: #eef2f7;
+  --on-dark-soft: #dbeafe;
+  --on-dark-muted: #bfdbfe;
+  --on-dark-faint: #93c5fd;
+
+  --hero-from: #eef5ff;
+  --hero-via: #e0ecff;
+  --hero-to: #f6faff;
+  --hero-title: #0f2a5c;
+  --hero-text: #475569;
+  --footer-bg: #eef3fb;
+  --footer-text: #475569;
+  --footer-muted: #5b6b82;
+  --footer-faint: #7a8799;
+  --footer-title: #0f2a5c;
+  --footer-line: rgba(15, 42, 92, 0.12);
+}
+
+/* Mint (light) */
+:root[data-theme='mint'] {
+  --primary: #047857;
+  --primary-dark: #065f46;
+  --primary-light: #e0f6ea;
+  --primary-deep: #065f46;
+  --primary-bright: #059669;
+  --accent: #10b981;
+  --ring: rgba(16, 185, 129, 0.22);
+  --bg: #f6fbf8;
+  --surface-alt: #f6fbf8;
+  --surface-alt-2: #ebf5ef;
+  --on-dark-soft: #d1fae5;
+  --on-dark-muted: #d1fae5;
+  --on-dark-faint: #d1fae5;
+
+  --hero-from: #ecfdf5;
+  --hero-via: #d6f4e4;
+  --hero-to: #f4fcf8;
+  --hero-title: #0b3d2e;
+  --hero-text: #4b6358;
+  --footer-bg: #eaf6ef;
+  --footer-text: #4b6358;
+  --footer-muted: #4b6358;
+  --footer-faint: #7a9186;
+  --footer-title: #0b3d2e;
+  --footer-line: rgba(11, 61, 46, 0.12);
+}
+
+/* Lavender (light) */
+:root[data-theme='lavender'] {
+  --primary: #6d28d9;
+  --primary-dark: #5b21b6;
+  --primary-light: #f1eafe;
+  --primary-deep: #4c1d95;
+  --primary-bright: #7c3aed;
+  --accent: #8b5cf6;
+  --ring: rgba(139, 92, 246, 0.22);
+  --bg: #faf8ff;
+  --surface-alt: #faf8ff;
+  --surface-alt-2: #f1edf9;
+  --on-dark-soft: #ede9fe;
+  --on-dark-muted: #ede9fe;
+  --on-dark-faint: #ede9fe;
+
+  --hero-from: #f4efff;
+  --hero-via: #e6dbfd;
+  --hero-to: #faf7ff;
+  --hero-title: #2e1a5c;
+  --hero-text: #5b5575;
+  --footer-bg: #f1ecfb;
+  --footer-text: #5b5575;
+  --footer-muted: #5b5575;
+  --footer-faint: #807a99;
+  --footer-title: #2e1a5c;
+  --footer-line: rgba(46, 26, 92, 0.12);
+}
+
+/* Peach (light) */
+:root[data-theme='peach'] {
+  --primary: #c2410c;
+  --primary-dark: #9a3412;
+  --primary-light: #ffeee0;
+  --primary-deep: #7c2d12;
+  --primary-bright: #ea580c;
+  --accent: #f97316;
+  --ring: rgba(249, 115, 22, 0.22);
+  --bg: #fffaf6;
+  --surface-alt: #fffaf6;
+  --surface-alt-2: #f9efe6;
+  --on-dark-soft: #ffedd5;
+  --on-dark-muted: #ffedd5;
+  --on-dark-faint: #ffedd5;
+
+  --hero-from: #fff2e8;
+  --hero-via: #ffe2cc;
+  --hero-to: #fff8f2;
+  --hero-title: #5a2410;
+  --hero-text: #7a5a4a;
+  --footer-bg: #fdf0e6;
+  --footer-text: #7a5a4a;
+  --footer-muted: #7a5a4a;
+  --footer-faint: #9a7d6d;
+  --footer-title: #5a2410;
+  --footer-line: rgba(90, 36, 16, 0.12);
+}
+
+/* Rose (light) */
+:root[data-theme='rose'] {
+  --primary: #be185d;
+  --primary-dark: #9d174d;
+  --primary-light: #fde7f1;
+  --primary-deep: #831843;
+  --primary-bright: #db2777;
+  --accent: #ec4899;
+  --ring: rgba(236, 72, 153, 0.22);
+  --bg: #fff8fb;
+  --surface-alt: #fff8fb;
+  --surface-alt-2: #f8edf2;
+  --on-dark-soft: #fce7f3;
+  --on-dark-muted: #fce7f3;
+  --on-dark-faint: #fce7f3;
+
+  --hero-from: #fff1f7;
+  --hero-via: #fddcea;
+  --hero-to: #fff7fa;
+  --hero-title: #5c1237;
+  --hero-text: #7a5668;
+  --footer-bg: #fceaf2;
+  --footer-text: #7a5668;
+  --footer-muted: #7a5668;
+  --footer-faint: #9a7686;
+  --footer-title: #5c1237;
+  --footer-line: rgba(92, 18, 55, 0.12);
+}
+
+/* Teal */
+:root[data-theme='teal'] {
+  --primary: #0f766e;
+  --primary-dark: #0b5d57;
+  --primary-light: #dff3f0;
+  --primary-deep: #083f3b;   /* hero + footer dark end */
+  --primary-bright: #14a89a; /* hero + banner light end */
+  --accent: #0d9488;         /* focus borders, highlights */
+  --ring: rgba(13, 148, 136, 0.2);
+  --bg: #f2f8f7;
+  --surface-alt: #f5faf9;
+  --surface-alt-2: #e9f3f1;
+  --on-dark-soft: #d3ece8;
+  --on-dark-muted: #a6d3cd;
+  --on-dark-faint: #86b8b1;
+}
+
+/* Blue (original) */
+:root[data-theme='blue'] {
+  --primary: #1e3a8a;
+  --primary-dark: #172b66;
+  --primary-light: #eaf0ff;
+  --primary-deep: #0f1f4d;
+  --primary-bright: #2f5bd1;
+  --accent: #2563eb;
+  --ring: rgba(37, 99, 235, 0.15);
+  --bg: #f4f6fb;
+  --surface-alt: #f8f9fd;
+  --surface-alt-2: #eef1f8;
+  --on-dark-soft: #d5dcf5;
+  --on-dark-muted: #aab6e0;
+  --on-dark-faint: #8f9cc9;
+}
+
+/* Purple */
+:root[data-theme='purple'] {
+  --primary: #5b21b6;
+  --primary-dark: #46188f;
+  --primary-light: #f0e8fd;
+  --primary-deep: #2e1065;
+  --primary-bright: #8b5cf6;
+  --accent: #7c3aed;
+  --ring: rgba(124, 58, 237, 0.18);
+  --bg: #f6f3fb;
+  --surface-alt: #faf7ff;
+  --surface-alt-2: #f1ebfb;
+  --on-dark-soft: #e4d9fb;
+  --on-dark-muted: #c4b0f0;
+  --on-dark-faint: #a28ad6;
+}
+
+/* Orange */
+:root[data-theme='orange'] {
+  --primary: #c2410c;
+  --primary-dark: #9a3412;
+  --primary-light: #ffedd5;
+  --primary-deep: #431407;
+  --primary-bright: #f97316;
+  --accent: #ea580c;
+  --ring: rgba(234, 88, 12, 0.18);
+  --bg: #fbf6f2;
+  --surface-alt: #fffaf5;
+  --surface-alt-2: #fbeee2;
+  --on-dark-soft: #fde2cc;
+  --on-dark-muted: #f5bf9a;
+  --on-dark-faint: #de9d72;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+  color: #111827;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

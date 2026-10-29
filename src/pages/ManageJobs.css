@@ -1,0 +1,232 @@
+.managejobs {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem 0;
+  width: 100%;
+}
+
+.managejobs-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.managejobs-head h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.managejobs-head p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+}
+
+.managejobs-head-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.managejobs-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid var(--primary);
+  transition: background 0.15s;
+}
+
+.managejobs-btn-solid {
+  background: var(--primary);
+  color: #fff;
+}
+
+.managejobs-btn-solid:hover {
+  background: var(--primary-dark);
+}
+
+.managejobs-btn-outline {
+  background: transparent;
+  color: var(--primary);
+}
+
+.managejobs-btn-outline:hover {
+  background: var(--primary-light);
+}
+
+.managejobs-alert {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.92rem;
+}
+
+.managejobs-alert-success {
+  background: var(--success-bg);
+  color: var(--success);
+}
+
+.managejobs-alert-error {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.managejobs-form {
+  margin-bottom: 1.25rem;
+}
+
+.managejobs-table-wrap {
+  margin-top: 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+
+.managejobs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.managejobs-table th {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  background: var(--surface-alt);
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+}
+
+.managejobs-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.managejobs-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.managejobs-table tbody tr:hover {
+  background: var(--surface-alt);
+}
+
+.managejobs-salary {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.managejobs-badge {
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.managejobs-row-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.managejobs-small {
+  padding: 0.3rem 0.7rem;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.managejobs-small:hover {
+  background: var(--primary-light);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.managejobs-small-danger:hover {
+  background: var(--danger-bg);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.managejobs-state {
+  margin-top: 1.25rem;
+  text-align: center;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem 1rem;
+  color: var(--muted);
+}
+
+.managejobs-state-error {
+  background: var(--danger-bg);
+  border-color: var(--danger-border);
+  color: var(--danger);
+}
+
+.managejobs-spinner {
+  width: 38px;
+  height: 38px;
+  margin: 0 auto 1rem;
+  border: 4px solid var(--primary-light);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: managejobs-spin 0.8s linear infinite;
+}
+
+@keyframes managejobs-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Table turns into stacked cards on phones */
+@media (max-width: 760px) {
+  .managejobs-table thead {
+    display: none;
+  }
+
+  .managejobs-table,
+  .managejobs-table tbody,
+  .managejobs-table tr,
+  .managejobs-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .managejobs-table tr {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .managejobs-table td {
+    border: none;
+    padding: 0.35rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .managejobs-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: var(--muted);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+  }
+}

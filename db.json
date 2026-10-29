@@ -1,0 +1,313 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "company": "TechNova Solutions",
+      "location": "Hyderabad",
+      "experience": 2,
+      "salary": "₹6 – 10 LPA",
+      "description": "Build responsive, accessible user interfaces for our SaaS products using React. You will work closely with designers and backend engineers, write reusable components, and help improve performance and code quality across the web app.",
+      "skills": [
+        "React",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "REST APIs"
+      ],
+      "jobType": "Full-time",
+      "createdAt": "2026-10-20T09:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "React Developer Intern",
+      "company": "PixelCraft Studio",
+      "location": "Bengaluru",
+      "experience": 0,
+      "salary": "₹15,000 – ₹25,000 / month",
+      "description": "A 6-month internship for fresh graduates who love building interfaces. You will pair with senior developers, build small features, fix bugs and learn production-level React practices.",
+      "skills": [
+        "React",
+        "JavaScript",
+        "Git"
+      ],
+      "jobType": "Internship",
+      "createdAt": "2026-10-22T11:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Backend Engineer (Node.js)",
+      "company": "CloudNest Systems",
+      "location": "Pune",
+      "experience": 3,
+      "salary": "₹10 – 16 LPA",
+      "description": "Design and maintain scalable REST APIs and microservices using Node.js and PostgreSQL. You will own features end to end, write automated tests and participate in code reviews.",
+      "skills": [
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "jobType": "Full-time",
+      "createdAt": "2026-10-18T08:15:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "UI/UX Designer",
+      "company": "Designly",
+      "location": "Remote",
+      "experience": 1,
+      "salary": "₹5 – 9 LPA",
+      "description": "Create wireframes, prototypes and polished visual designs for mobile and web products. Run small usability tests and collaborate with developers to ship pixel-perfect experiences.",
+      "skills": [
+        "Figma",
+        "Prototyping",
+        "User Research",
+        "Design Systems"
+      ],
+      "jobType": "Remote",
+      "createdAt": "2026-10-21T14:45:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "Data Analyst",
+      "company": "InsightEdge Analytics",
+      "location": "Chennai",
+      "experience": 1,
+      "salary": "₹5 – 8 LPA",
+      "description": "Turn raw business data into dashboards and actionable insights. You will write SQL queries, clean datasets and present findings to product and marketing teams.",
+      "skills": [
+        "SQL",
+        "Excel",
+        "Power BI",
+        "Python"
+      ],
+      "jobType": "Full-time",
+      "createdAt": "2026-10-15T10:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "title": "DevOps Engineer",
+      "company": "InfraWorks",
+      "location": "Hyderabad",
+      "experience": 4,
+      "salary": "₹14 – 22 LPA",
+      "description": "Own our CI/CD pipelines, cloud infrastructure and monitoring. Automate deployments, improve reliability and help teams ship faster with infrastructure as code.",
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform",
+        "CI/CD",
+        "Linux"
+      ],
+      "jobType": "Full-time",
+      "createdAt": "2026-10-12T07:50:00.000Z"
+    },
+    {
+      "id": 7,
+      "title": "Full Stack Developer",
+      "company": "Finlytics",
+      "location": "Mumbai",
+      "experience": 2,
+      "salary": "₹8 – 14 LPA",
+      "description": "Work across our React front end and Node.js back end to build fintech dashboards. Responsibilities include API design, database modelling and writing maintainable, tested code.",
+      "skills": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "JavaScript"
+      ],
+      "jobType": "Full-time",
+      "createdAt": "2026-10-23T12:20:00.000Z"
+    },
+    {
+      "id": 8,
+      "title": "QA Automation Engineer",
+      "company": "QualityFirst Labs",
+      "location": "Noida",
+      "experience": 2,
+      "salary": "₹6 – 11 LPA",
+      "description": "Contract role to build and maintain automated test suites for web applications. You will write end-to-end tests, report defects and improve our regression coverage.",
+      "skills": [
+        "Selenium",
+        "Cypress",
+        "JavaScript",
+        "Test Planning"
+      ],
+      "jobType": "Contract",
+      "createdAt": "2026-10-10T09:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "title": "Technical Content Writer",
+      "company": "DevDocs Co.",
+      "location": "Remote",
+      "experience": 1,
+      "salary": "₹4 – 7 LPA",
+      "description": "Write clear tutorials, documentation and blog posts for developers. A good understanding of web technologies and strong written English are essential.",
+      "skills": [
+        "Technical Writing",
+        "Markdown",
+        "JavaScript",
+        "SEO"
+      ],
+      "jobType": "Part-time",
+      "createdAt": "2026-10-08T16:30:00.000Z"
+    },
+    {
+      "id": 10,
+      "title": "Machine Learning Engineer",
+      "company": "NeuralPath AI",
+      "location": "Bengaluru",
+      "experience": 3,
+      "salary": "₹15 – 25 LPA",
+      "description": "Develop, train and deploy machine learning models for recommendation and NLP use cases. You will work with data scientists to take prototypes into production.",
+      "skills": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "MLOps"
+      ],
+      "jobType": "Full-time",
+      "createdAt": "2026-10-24T08:00:00.000Z"
+    }
+  ],
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Priya Sharma",
+      "email": "priya@example.com",
+      "phone": "9876543210",
+      "password": "demo123",
+      "experience": 2,
+      "skills": [
+        "React",
+        "JavaScript",
+        "CSS"
+      ],
+      "resumeUrl": "https://example.com/resumes/priya-sharma.pdf"
+    },
+    {
+      "id": 2,
+      "name": "Rahul Verma",
+      "email": "rahul@example.com",
+      "phone": "9123456780",
+      "password": "demo123",
+      "experience": 3,
+      "skills": [
+        "Node.js",
+        "Express",
+        "PostgreSQL"
+      ],
+      "resumeUrl": ""
+    },
+    {
+      "id": 3,
+      "name": "Ananya Reddy",
+      "email": "ananya@example.com",
+      "phone": "9988776655",
+      "password": "demo123",
+      "experience": 0,
+      "skills": [
+        "HTML",
+        "CSS",
+        "React"
+      ],
+      "resumeUrl": "https://example.com/resumes/ananya-reddy.pdf"
+    },
+    {
+      "id": 4,
+      "name": "Karthik Iyer",
+      "email": "karthik@example.com",
+      "phone": "9012345678",
+      "password": "demo123",
+      "experience": 4,
+      "skills": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ],
+      "resumeUrl": ""
+    },
+    {
+      "id": 5,
+      "name": "Sneha Patel",
+      "email": "sneha@example.com",
+      "phone": "9345678120",
+      "password": "demo123",
+      "experience": 1,
+      "skills": [
+        "Figma",
+        "User Research",
+        "Prototyping"
+      ],
+      "resumeUrl": "https://example.com/resumes/sneha-patel.pdf"
+    }
+  ],
+  "applications": [
+    {
+      "id": 1,
+      "jobId": 1,
+      "candidateId": 1,
+      "appliedAt": "2026-10-21T10:00:00.000Z",
+      "status": "Shortlisted",
+      "coverLetter": "I have two years of React experience and would love to contribute to TechNova's products."
+    },
+    {
+      "id": 2,
+      "jobId": 7,
+      "candidateId": 1,
+      "appliedAt": "2026-10-24T09:10:00.000Z",
+      "status": "Pending",
+      "coverLetter": "Excited to work across the stack at Finlytics."
+    },
+    {
+      "id": 3,
+      "jobId": 3,
+      "candidateId": 2,
+      "appliedAt": "2026-10-19T13:25:00.000Z",
+      "status": "Hired",
+      "coverLetter": "Three years of Node.js and PostgreSQL experience building REST APIs."
+    },
+    {
+      "id": 4,
+      "jobId": 2,
+      "candidateId": 3,
+      "appliedAt": "2026-10-23T15:40:00.000Z",
+      "status": "Pending",
+      "coverLetter": "A recent graduate eager to learn React in a real team."
+    },
+    {
+      "id": 5,
+      "jobId": 6,
+      "candidateId": 4,
+      "appliedAt": "2026-10-14T08:30:00.000Z",
+      "status": "Shortlisted",
+      "coverLetter": ""
+    },
+    {
+      "id": 6,
+      "jobId": 4,
+      "candidateId": 5,
+      "appliedAt": "2026-10-22T17:05:00.000Z",
+      "status": "Rejected",
+      "coverLetter": "I enjoy turning research into clean interfaces."
+    },
+    {
+      "id": 7,
+      "jobId": 1,
+      "candidateId": 3,
+      "appliedAt": "2026-10-23T09:55:00.000Z",
+      "status": "Pending",
+      "coverLetter": ""
+    },
+    {
+      "id": 8,
+      "jobId": 7,
+      "candidateId": 2,
+      "appliedAt": "2026-10-25T11:15:00.000Z",
+      "status": "Pending",
+      "coverLetter": "Interested in moving into full stack work."
+    }
+  ]
+}

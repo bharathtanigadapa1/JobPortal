@@ -1,0 +1,134 @@
+.register {
+  display: grid;
+  place-items: start center;
+  padding: 2.5rem 1rem 0;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 680px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+.register-card h1 {
+  font-size: 1.6rem;
+}
+
+.register-sub {
+  color: var(--muted);
+}
+
+.register-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.register-full {
+  grid-column: 1 / -1;
+}
+
+.register-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.register-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.register-field input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.register-field input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.register-error {
+  color: var(--danger);
+  font-size: 0.8rem;
+}
+
+.register-alert {
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.92rem;
+}
+
+.register-alert-success {
+  background: var(--success-bg);
+  color: var(--success);
+}
+
+.register-alert-error {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.register-submit {
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.register-submit:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.register-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.register-switch {
+  text-align: center;
+  margin: 1rem 0 0;
+  font-size: 0.92rem;
+}
+
+.register-note {
+  margin: 1.25rem 0 0;
+  padding: 0.8rem 0.9rem;
+  background: var(--warning-bg);
+  color: var(--warning);
+  border-radius: 8px;
+  font-size: 0.82rem;
+}
+
+.register-note code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+@media (max-width: 620px) {
+  .register-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .register-card {
+    padding: 1.4rem;
+  }
+}

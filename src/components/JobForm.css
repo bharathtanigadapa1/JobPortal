@@ -1,0 +1,121 @@
+.jobform {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+}
+
+.jobform-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.jobform-alert {
+  background: var(--danger-bg);
+  color: var(--danger);
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.92rem;
+}
+
+.jobform-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.jobform-full {
+  grid-column: 1 / -1;
+}
+
+.jobform-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.jobform-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.jobform-field input,
+.jobform-field select,
+.jobform-field textarea {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  resize: vertical;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.jobform-field input:focus,
+.jobform-field select:focus,
+.jobform-field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.jobform-error {
+  color: var(--danger);
+  font-size: 0.8rem;
+}
+
+.jobform-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+.jobform-btn {
+  padding: 0.65rem 1.3rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid var(--primary);
+  transition: background 0.15s;
+}
+
+.jobform-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.jobform-btn-outline {
+  background: transparent;
+  color: var(--primary);
+}
+
+.jobform-btn-outline:hover:not(:disabled) {
+  background: var(--primary-light);
+}
+
+.jobform-btn-solid {
+  background: var(--primary);
+  color: #fff;
+}
+
+.jobform-btn-solid:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+@media (max-width: 640px) {
+  .jobform-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jobform-actions {
+    flex-direction: column-reverse;
+  }
+
+  .jobform-btn {
+    width: 100%;
+  }
+}

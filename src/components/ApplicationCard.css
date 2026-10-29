@@ -1,0 +1,140 @@
+.appcard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.appcard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.appcard-title {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.appcard-title a {
+  color: #111827;
+}
+
+.appcard-title a:hover {
+  color: var(--accent);
+}
+
+.appcard-sub {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.appcard-status {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+}
+
+.appcard-status-pending {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.appcard-status-shortlisted {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.appcard-status-rejected {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.appcard-status-hired {
+  background: var(--success-bg);
+  color: var(--success);
+}
+
+.appcard-candidate {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: var(--surface-alt);
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+}
+
+.appcard-avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.appcard-email {
+  font-size: 0.85rem;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.appcard-letter {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-style: italic;
+}
+
+.appcard-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.appcard-date {
+  font-size: 0.83rem;
+  color: var(--muted);
+}
+
+.appcard-select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.appcard-select-wrap select {
+  padding: 0.4rem 0.6rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.appcard-select-wrap select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.appcard-select-wrap select:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
