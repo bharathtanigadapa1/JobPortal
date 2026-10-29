@@ -1,9 +1,7 @@
-// All communication with JSON Server lives in this file.
-// Components never call fetch() directly; they call the functions below.
 
-const API_URL = 'http://localhost:3000'
 
-// Shared helper: sends the request, checks the HTTP status and returns JSON.
+const API_URL = "https://jobportal-xbvf.onrender.com/";
+
 async function request(path, options = {}) {
   let response
 
