@@ -1,7 +1,6 @@
 
 
 const API_URL = "https://jobportal-xbvf.onrender.com/";
-
 async function request(path, options = {}) {
   let response
 
