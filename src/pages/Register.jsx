@@ -185,11 +185,7 @@ function Register() {
           Already registered? <Link to="/login">Log in</Link>
         </p>
 
-        <p className="register-note">
-          <strong>Demo note:</strong> this project uses JSON Server, which is not a secure
-          backend. The password is saved as plain text in <code>db.json</code> only so the demo
-          login can work. Never reuse a real password here.
-        </p>
+
       </div>
     </div>
   )

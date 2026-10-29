@@ -242,6 +242,19 @@
         "Prototyping"
       ],
       "resumeUrl": "https://example.com/resumes/sneha-patel.pdf"
+    },
+    {
+      "name": "Tanigadapa Bharath Kumar",
+      "email": "bharathtanigadapa1@gmail.com",
+      "phone": "8008233909",
+      "password": "123456789",
+      "experience": 0,
+      "skills": [
+        "React",
+        "JavaScript"
+      ],
+      "resumeUrl": "",
+      "id": 6
     }
   ],
   "applications": [

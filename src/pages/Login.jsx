@@ -133,11 +133,6 @@ function Login() {
             </div>
           </form>
         )}
-
-        <p className="login-note">
-          <strong>Security note:</strong> JSON Server is not a secure authentication backend. This
-          login is a classroom demo only and must not be used for real accounts or passwords.
-        </p>
       </div>
     </div>
   )
