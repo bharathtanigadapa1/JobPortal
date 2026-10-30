@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext.jsx'
 import './RoleGuard.css'
-
+// This if for role based access
 
 function RoleGuard({ role, children }) {
   const { role: currentRole } = useAuth()
