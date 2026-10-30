@@ -1,9 +1,5 @@
 import React, { createContext, useContext, useState } from 'react'
 
-// DEMO AUTHENTICATION
-// The logged-in user is kept in sessionStorage so a page refresh does not log
-// them out. JSON Server is NOT a secure backend, so this is only suitable for
-// a classroom demo. The password is never stored in the session.
 
 const AuthContext = createContext(null)
 const STORAGE_KEY = 'jobportal_session'
@@ -18,7 +14,7 @@ function readSession() {
 }
 
 export function AuthProvider({ children }) {
-  // session looks like: { role: 'candidate', candidate: {id, name, email} } or { role: 'recruiter' }
+  
   const [session, setSession] = useState(readSession)
 
   function saveSession(newSession) {
@@ -31,7 +27,7 @@ export function AuthProvider({ children }) {
   }
 
   function loginCandidate(candidate) {
-    // Copy only the safe fields (no password)
+    
     saveSession({
       role: 'candidate',
       candidate: { id: candidate.id, name: candidate.name, email: candidate.email },

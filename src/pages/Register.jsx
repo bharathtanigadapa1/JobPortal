@@ -26,7 +26,7 @@ function Register() {
   const [success, setSuccess] = useState('')
   const [saving, setSaving] = useState(false)
 
-  // After a successful registration, wait a moment and go to the home page
+ 
   useEffect(() => {
     if (!success) return undefined
     const timer = setTimeout(() => navigate('/'), 1500)
@@ -101,13 +101,13 @@ function Register() {
         name: values.name.trim(),
         email: values.email.trim().toLowerCase(),
         phone: values.phone.trim(),
-        password: values.password, // DEMO ONLY - see the note on this page
+        password: values.password, 
         experience: Number(values.experience),
         skills: parseSkills(values.skills),
         resumeUrl: values.resumeUrl.trim(),
       })
 
-      loginCandidate(saved) // log the new candidate in straight away
+      loginCandidate(saved) 
       setSuccess('Registration successful! Redirecting you to the home page...')
     } catch (err) {
       setSubmitError(err.message)

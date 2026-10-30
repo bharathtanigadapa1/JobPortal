@@ -11,8 +11,7 @@ function Dashboard() {
   const [error, setError] = useState('')
   const [reloadCount, setReloadCount] = useState(0)
 
-  // Fetch all three resources in parallel. Statistics are recalculated from this
-  // data every time the page opens, so they always match db.json.
+  
   useEffect(() => {
     let ignore = false
 
@@ -43,7 +42,6 @@ function Dashboard() {
     }
   }, [reloadCount])
 
-  // Dashboard calculations
   const countByStatus = (status) => applications.filter((app) => app.status === status).length
 
   const stats = [

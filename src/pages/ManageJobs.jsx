@@ -13,7 +13,7 @@ function ManageJobs() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const location = useLocation()
-  // EditJob navigates back here with a success message in the router state
+  
   const [message, setMessage] = useState(
     location.state && location.state.message
       ? { type: 'success', text: location.state.message }
@@ -22,10 +22,10 @@ function ManageJobs() {
   const [filters, setFilters] = useState(emptyFilters)
   const [reloadCount, setReloadCount] = useState(0)
 
-  // formMode: 'closed' | 'add'  (only used for posting a new job)
+ 
   const [formMode, setFormMode] = useState('closed')
 
-  // GET /jobs - runs on first load and again whenever reloadCount changes
+  
   useEffect(() => {
     let ignore = false
 
@@ -61,7 +61,7 @@ function ManageJobs() {
     setFormMode('closed')
   }
 
-  // Called by JobForm after a successful POST (editing happens on /recruiter/jobs/:id/edit)
+  
   function handleSaved(savedJob) {
     setMessage({ type: 'success', text: `"${savedJob.title}" was posted.` })
     closeForm()

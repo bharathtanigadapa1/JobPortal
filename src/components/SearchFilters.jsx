@@ -2,15 +2,7 @@ import React from 'react'
 import { EXPERIENCE_OPTIONS, JOB_TYPES } from '../utils/constants.js'
 import './SearchFilters.css'
 
-// Controlled, reusable filter bar. The parent owns the filter values and
-// receives every change through onChange(fieldName, newValue).
-//
-// Props:
-//   filters        { keyword, location, experience, jobType }
-//   onChange       function(field, value)
-//   onReset        function()
-//   showLocation / showExperience / showJobType   booleans to hide controls
-//   keywordPlaceholder   text shown in the first input
+
 function SearchFilters({
   filters,
   onChange,

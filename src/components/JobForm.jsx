@@ -15,7 +15,7 @@ const emptyForm = {
   jobType: 'Full-time',
 }
 
-// Converts a job object from the API into text values for the form inputs
+
 function toFormValues(job) {
   return {
     title: job.title || '',
@@ -29,11 +29,7 @@ function toFormValues(job) {
   }
 }
 
-// Reusable form for BOTH creating and editing a job.
-// Props:
-//   initialData  job object to edit (leave empty / null to create a new job)
-//   onSaved      function(savedJob, wasEdit) called after a successful POST / PUT
-//   onCancel     function() called when the user clicks Cancel
+
 function JobForm({ initialData = null, onSaved, onCancel }) {
   const isEdit = Boolean(initialData)
   const [values, setValues] = useState(initialData ? toFormValues(initialData) : emptyForm)
@@ -41,7 +37,7 @@ function JobForm({ initialData = null, onSaved, onCancel }) {
   const [submitError, setSubmitError] = useState('')
   const [saving, setSaving] = useState(false)
 
-  // When a different job is chosen for editing, load its values into the form
+
   useEffect(() => {
     setValues(initialData ? toFormValues(initialData) : emptyForm)
     setErrors({})
@@ -105,7 +101,7 @@ function JobForm({ initialData = null, onSaved, onCancel }) {
       let savedJob
 
       if (isEdit) {
-        // PUT replaces the whole record, so keep the old fields (id, createdAt)
+       
         savedJob = await updateJob(initialData.id, { ...initialData, ...jobData })
       } else {
         savedJob = await addJob({ ...jobData, createdAt: new Date().toISOString() })

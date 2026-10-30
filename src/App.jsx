@@ -14,7 +14,7 @@ import EditJob from './pages/EditJob.jsx'
 import Applications from './pages/Applications.jsx'
 import CandidateApplications from './pages/CandidateApplications.jsx'
 
-// App.jsx only wires up routing. All page content lives in src/pages.
+
 function App() {
   return (
     <BrowserRouter>

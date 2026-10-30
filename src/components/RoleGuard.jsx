@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext.jsx'
 import './RoleGuard.css'
 
-// Wraps a page and only shows it to the required role ("candidate" or "recruiter").
-// Everyone else sees a friendly message with a link to the login page.
+
 function RoleGuard({ role, children }) {
   const { role: currentRole } = useAuth()
 

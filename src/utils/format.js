@@ -1,4 +1,4 @@
-// Small formatting helpers
+
 
 export function formatDate(isoString) {
   if (!isoString) return '—'
@@ -17,7 +17,7 @@ export function formatExperience(years) {
   return value === 1 ? '1 year' : `${value} years`
 }
 
-// "React, Node , CSS" -> ["React", "Node", "CSS"]
+
 export function parseSkills(text) {
   return text
     .split(',')
@@ -25,7 +25,7 @@ export function parseSkills(text) {
     .filter(Boolean)
 }
 
-// JSON Server may return ids as numbers (v0.17) or strings (v1), so compare as strings
+
 export function sameId(a, b) {
   return String(a) === String(b)
 }

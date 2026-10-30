@@ -1,12 +1,4 @@
-/* Global resets, typography and CSS variables only.
-   Every component keeps its own styles in its own CSS file. */
 
-/* ================= COLOR THEMES =================
-   Change ONE word in index.html:  <html data-theme="teal">
-   Options: light | mint | lavender | peach | rose | teal | blue | purple | orange
-   To make your own, copy a block below and change the values. */
-
-/* Shared (non-theme) variables */
 :root {
   --surface: #ffffff;
   --text: #1f2937;

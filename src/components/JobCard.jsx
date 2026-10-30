@@ -2,8 +2,7 @@ import React from 'react'
 import { formatDate, formatExperience } from '../utils/format.js'
 import './JobCard.css'
 
-// Presentational component: everything arrives through props.
-// Props: job, applied (boolean), onViewDetails(job), onApply(job)
+
 function JobCard({ job, applied = false, onViewDetails, onApply }) {
   const skills = job.skills || []
 

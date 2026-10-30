@@ -54,7 +54,7 @@ function Applications() {
     }
   }, [reloadCount])
 
-  // PUT /applications/:id  (the whole record is sent with the new status)
+  
   async function handleStatusChange(applicationId, newStatus) {
     const original = applications.find((app) => sameId(app.id, applicationId))
     if (!original) return
@@ -74,8 +74,6 @@ function Applications() {
     }
   }
 
-  // Join the three resources using their ids. A missing record becomes null
-  // and ApplicationCard shows a friendly fallback instead of crashing.
   const combined = applications
     .map((app) => ({
       ...app,

@@ -18,7 +18,7 @@ function Navbar() {
     navigate('/')
   }
 
-  // NavLink adds the "active" class automatically for the current page
+  
   const linkClass = ({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')
 
   return (

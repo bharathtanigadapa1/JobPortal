@@ -6,7 +6,7 @@ import { formatDate, formatExperience, sameId } from '../utils/format.js'
 import './JobDetails.css'
 
 function JobDetails() {
-  const { id } = useParams() // the :id part of /jobs/:id
+  const { id } = useParams() 
   const location = useLocation()
   const { role, candidate } = useAuth()
 
@@ -21,7 +21,7 @@ function JobDetails() {
   const [success, setSuccess] = useState('')
   const [applyError, setApplyError] = useState('')
 
-  // Load the job using GET /jobs/:id
+  
   useEffect(() => {
     let ignore = false
 
@@ -48,7 +48,7 @@ function JobDetails() {
     }
   }, [id])
 
-  // Check whether the logged-in candidate has already applied to this job
+  
   useEffect(() => {
     let ignore = false
 
@@ -62,7 +62,7 @@ function JobDetails() {
         )
         if (!ignore) setAlreadyApplied(found)
       } catch (err) {
-        // If this check fails we check again when the candidate presses Apply
+        
       }
     }
 
@@ -72,7 +72,7 @@ function JobDetails() {
     }
   }, [id, candidate])
 
-  // Coming from an "Apply Now" button on a job card: scroll to the apply box
+  
   useEffect(() => {
     if (job && location.state && location.state.fromApply) {
       const box = document.getElementById('apply-section')
@@ -88,7 +88,7 @@ function JobDetails() {
     try {
       setSubmitting(true)
 
-      // Fetch fresh data so duplicates are caught even if another tab applied
+      
       const applications = await getApplications()
       const duplicate = applications.some(
         (app) => sameId(app.jobId, job.id) && sameId(app.candidateId, candidate.id)

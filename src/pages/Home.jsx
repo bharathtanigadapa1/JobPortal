@@ -21,7 +21,7 @@ function Home() {
   const [filters, setFilters] = useState(emptyFilters)
   const [reloadCount, setReloadCount] = useState(0)
 
-  // Load all jobs from JSON Server
+  
   useEffect(() => {
     let ignore = false
 
@@ -44,7 +44,7 @@ function Home() {
     }
   }, [reloadCount])
 
-  // If a candidate is logged in, remember which jobs they already applied to
+
   useEffect(() => {
     let ignore = false
 
@@ -61,7 +61,7 @@ function Home() {
           )
         }
       } catch (err) {
-        // The "Applied" badge is a nice extra, so a failure here is not shown
+        
       }
     }
 
@@ -71,7 +71,7 @@ function Home() {
     }
   }, [candidate])
 
-  // Scroll to the jobs section when the URL is /#jobs (the "Find Jobs" link)
+  
   useEffect(() => {
     if (location.hash === '#jobs' && !loading) {
       const section = document.getElementById('jobs')
@@ -87,7 +87,7 @@ function Home() {
     setFilters(emptyFilters)
   }
 
-  // Filtering runs on the jobs that were loaded from the API
+  
   const keyword = filters.keyword.trim().toLowerCase()
   const locationText = filters.location.trim().toLowerCase()
 
@@ -109,7 +109,7 @@ function Home() {
   }
 
   function applyNow(job) {
-    // The application itself is submitted on the details page
+   
     navigate(`/jobs/${job.id}`, { state: { fromApply: true } })
   }
 

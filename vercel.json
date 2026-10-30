@@ -1,3 +1,5 @@
-{
+git add db.json public/Resumes src/components/ApplicationCard.jsx
+git commit -m "Add resume links for candidates"
+git push{
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

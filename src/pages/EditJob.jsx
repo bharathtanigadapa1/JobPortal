@@ -4,7 +4,7 @@ import { getJobById } from '../services/api.js'
 import JobForm from '../components/JobForm.jsx'
 import './EditJob.css'
 
-// Update flow: Edit button -> useParams() -> GET /jobs/:id -> populate form -> PUT
+
 function EditJob() {
   const { id } = useParams()
   const navigate = useNavigate()
@@ -40,7 +40,6 @@ function EditJob() {
     }
   }, [id])
 
-  // After a successful PUT, go back to the list with a success message
   function handleSaved(savedJob) {
     navigate('/recruiter/jobs', { state: { message: `"${savedJob.title}" was updated.` } })
   }

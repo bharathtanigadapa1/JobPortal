@@ -28,7 +28,7 @@ async function request(path, options = {}) {
   return response.json()
 }
 
-// Small helpers that build the options object for POST / PUT / DELETE
+
 const post = (data) => ({ method: 'POST', body: JSON.stringify(data) })
 const put = (data) => ({ method: 'PUT', body: JSON.stringify(data) })
 const remove = () => ({ method: 'DELETE' })
@@ -77,7 +77,7 @@ export async function deleteCandidate(id) {
   return request(`/candidates/${id}`, remove())
 }
 
-/* ------------------------- Applications ------------------------ */
+
 
 export async function getApplications() {
   return request('/applications')
